@@ -91,7 +91,7 @@ function init() {
 
       // Create a physics body
       let b;
-      let x = window.innerWidth * 0.2 + Math.random() * window.innerWidth * 0.6; // 20%–80% of screen width
+      let x = window.innerWidth * 0.1 + Math.random() * window.innerWidth * 0.6; // 20%–80% of screen width
       j++;
       let y = window.innerHeight - referenceSize * j * 0.8;
       if (circle) {
@@ -112,9 +112,11 @@ function init() {
   }
 
   // Create bodies of different sizes and shapes
-  createBodies(8 * amountRatio, 1, false);
+  createBodies(12 * amountRatio, 1, false);
   createBodies(6 * amountRatio, 1, true);
   createBodies(1 * amountRatio, 2, false);
+  createBodies(8 * amountRatio, 1, false);
+
 
   // Add mouse constraint for interaction
   let mouse = Mouse.create(document.body);
@@ -124,7 +126,7 @@ function init() {
   }, {passive: false});
   let mouseConstraint = Matter.MouseConstraint.create(engine, {
     mouse: mouse,
-    constraint: {stiffness: 0.5}
+    constraint: {stiffness: 1.4}
   });
 
   // Add the mouse constraint to the world
