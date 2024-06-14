@@ -115,7 +115,6 @@ function init() {
   createBodies(12 * amountRatio, 1, false);
   createBodies(6 * amountRatio, 1, true);
   createBodies(1 * amountRatio, 2, false);
-  createBodies(8 * amountRatio, 1, false);
 
 
   // Add mouse constraint for interaction
