@@ -11,7 +11,7 @@ body, html{color: #000; overflow: hidden; position: fixed; width: 100%; height: 
 /* Block Colors */
 .color0{background:#E13737; border: 0px solid rgba(255, 255, 255, 0.2);}
 .color1{background:#F4A937; border: 0px solid rgba(255, 255, 255, 0.3);}
-.color2{background:#377BE1; border: 0px solid rgba(255, 255, 255, 0.2);}
+.color2{background:#3d81e7; border: 0px solid rgba(255, 255, 255, 0.2);}
 
 /* Block Hovers */
 @media (hover: hover) {
@@ -52,8 +52,8 @@ h1::selection, h1 strong::selection, .button::selection {background: transparent
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body{background: #082032; color:#fff;}
-  .color0{background:#4C5E6B; border: 0px solid rgba(255, 255, 255, 0.3);}
-  .color1{background:#2C394B; border: 0px solid rgba(255, 255, 255, 0.3);}
+  .color0{background:#ddc01d; border: 0px solid rgba(255, 255, 255, 0.3);}
+  .color1{background:#3b82e6; border: 0px solid rgba(255, 255, 255, 0.3);}
   .color2{background:#FF4C29; border: 0px solid rgba(255, 255, 255, 0.3);}
   .button{color:#082032;}
 }
