@@ -43,7 +43,7 @@ function init() {
   Composite.add(engine.world, [ground, left, right]);
 
   // Parameters for creating interactive bodies
-  const numberOfBlocks = 48;
+  const numberOfBlocks = 30;
   const existenceSpace = 300;
   let referenceSize = 60;
   let amountRatio = 2;
@@ -112,8 +112,8 @@ function init() {
   }
 
   // Create bodies of different sizes and shapes
-  createBodies(8 * amountRatio, 1, false);
-  createBodies(6 * amountRatio, 1, true);
+  createBodies(6 * amountRatio, 1, false);
+  createBodies(2 * amountRatio, 1, true);
   createBodies(1 * amountRatio, 2, false);
 
   // Add mouse constraint for interaction
